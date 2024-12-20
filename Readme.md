@@ -18,6 +18,11 @@ Username: aristos32
 Password: sLiWsvzAd3JdUcAbd^
 ```
 
+
+
+Database Connect
+
+Right now the database port is not exposed to the host
 - PHP my admin
 ```
 http://localhost:8083/
