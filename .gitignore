@@ -1,0 +1,59 @@
+# Ignore WordPress core files
+/wp-admin/
+/wp-includes/
+
+# Ignore dynamic files
+*.log
+*.sql
+*.tar.gz
+*.zip
+
+# Ignore sensitive configuration files
+wp-config.php
+wp-config-*.php
+
+# Ignore uploads directory (optional)
+# Uncomment the line below if you don't want to track uploaded media files
+# /wp-content/uploads/
+
+# Ignore cache files
+/wp-content/cache/
+/wp-content/advanced-cache.php
+/wp-content/wp-cache-config.php
+/wp-content/plugins/*/cache/
+*.swp
+*.swo
+
+# Ignore WordPress-specific files
+debug.log
+wp-content/debug.log
+
+# Ignore composer dependencies
+/vendor/
+/composer.lock
+
+# Node.js dependencies
+/node_modules/
+/npm-debug.log
+/yarn-error.log
+.pnp.cjs
+.pnp.loader.mjs
+
+# IDE and editor config files
+/.idea/
+/.vscode/
+/*.sublime-workspace
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignore any other personal environment files
+.env
+.env.*
+
+# Optional: Include your custom plugins and themes
+!wp-content/plugins/my-custom-plugin/
+!wp-content/themes/my-custom-theme/
+
