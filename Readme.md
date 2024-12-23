@@ -1,3 +1,9 @@
+- Normal localhost installation
+```
+https://developer.wordpress.org/advanced-administration/before-install/howto-install/
+```
+
+- Docker Installation
 https://dev.to/savvasstephnds/run-wordpress-locally-using-docker-5bk2
 
 - Start containers
