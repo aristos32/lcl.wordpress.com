@@ -1,19 +1,25 @@
-version: "3" 
+version: "3.7" # Use the latest compatible version for features
+
 services:
   db:
     image: mysql:latest
+    container_name: wordpress_db
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: MySQLRootPassword
       MYSQL_DATABASE: MySQLDatabaseName
       MYSQL_USER: MySQLUsername
       MYSQL_PASSWORD: MySQLUserPassword
+    volumes:
+      - mysql:/var/lib/mysql
+    networks:
+      - wordpress_network
 
   wordpress:
     depends_on:
       - db
-    build:
-      context: . 
+    image: wordpress:latest
+    container_name: wordpress_app
     restart: always
     ports:
       - "83:80"
@@ -23,10 +29,13 @@ services:
       WORDPRESS_DB_PASSWORD: MySQLUserPassword
       WORDPRESS_DB_NAME: MySQLDatabaseName
     volumes:
-      - "./:/var/www/html"
+      - ./wp-content:/var/www/html/wp-content # Only sync wp-content
+    networks:
+      - wordpress_network
 
   phpmyadmin:
-    image: phpmyadmin/phpmyadmin
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: phpmyadmin
     restart: always
     ports:
       - "8083:80"
@@ -34,6 +43,12 @@ services:
       PMA_HOST: db
       PMA_USER: MySQLUsername
       PMA_PASSWORD: MySQLUserPassword
+    networks:
+      - wordpress_network
 
 volumes:
-  mysql: {}
+  mysql: {} # Persistent volume for MySQL
+
+networks:
+  wordpress_network:
+    driver: bridge
