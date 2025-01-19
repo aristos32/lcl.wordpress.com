@@ -1,3 +1,0 @@
-/**
- * Plugin Name: Example Plugin
- */
