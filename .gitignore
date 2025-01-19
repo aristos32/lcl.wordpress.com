@@ -57,3 +57,4 @@ desktop.ini
 !wp-content/plugins/my-custom-plugin/
 !wp-content/themes/my-custom-theme/
 
+/mysql-data/

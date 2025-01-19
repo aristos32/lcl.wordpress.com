@@ -11,7 +11,7 @@ services:
       MYSQL_USER: MySQLUsername
       MYSQL_PASSWORD: MySQLUserPassword
     volumes:
-      - mysql:/var/lib/mysql
+      - ./mysql-data:/var/lib/mysql # the data would be stored in the ./mysql-data directory relative to your docker-compose.yml file
     networks:
       - wordpress_network
     ports:
