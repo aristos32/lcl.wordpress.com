@@ -54,6 +54,8 @@ $ docker exec -it <container_id_or_name_of_db_service> mysql -u MySQLUsername -p
 
 ```
 
+```$ docker exec -it wordpress_app /bin/bash```
+
 - to install plugins correctly via admin panel
 ```
 /var/www/html# chown -R www-data:www-data /var/www/html/wp-content
