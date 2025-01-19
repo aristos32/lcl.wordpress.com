@@ -1,3 +1,5 @@
+<?php
+
 /**
  * Plugin Name: Example Plugin
  * Description: This is an example plugin for the WordPress developer pathway.
