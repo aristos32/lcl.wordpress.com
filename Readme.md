@@ -41,17 +41,21 @@ Password: sLiWsvzAd3JdUcAbd^
 
 Database Connect
 
-Right now the database port is not exposed to the host
 - PHP my admin
 ```
 http://lcl.wordpress.com:8083/
 OR
 http://localhost:8083/
 ```
+OR from host
+
+```
+$ mysql -h 127.0.0.1 -P 3307 -u MySQLUsername -p
+```
+
 OR
 ```
 $ docker exec -it <container_id_or_name_of_db_service> mysql -u MySQLUsername -p
-
 ```
 
 ```$ docker exec -it wordpress_app /bin/bash```
