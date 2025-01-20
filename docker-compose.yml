@@ -15,7 +15,7 @@ services:
     networks:
       - wordpress_network
     ports:
-      - "3307:3306"
+      - "3309:3306"
 
   wordpress:
     depends_on:
