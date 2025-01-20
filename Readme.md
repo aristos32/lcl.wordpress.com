@@ -1,12 +1,12 @@
-- Normal localhost installation
+## Normal localhost installation
 ```
 https://developer.wordpress.org/advanced-administration/before-install/howto-install/
+
+Docker Installation
+https://dev.to/savvasstephnds/run-wordpress-locally-using-docker-5bk2
 ```
 
-- Docker Installation
-https://dev.to/savvasstephnds/run-wordpress-locally-using-docker-5bk2
-
-- Add this to /etc/hosts
+## Add this to /etc/hosts
 ```
 127.0.0.1 lcl.wordpress.com
 ```
@@ -15,7 +15,7 @@ https://dev.to/savvasstephnds/run-wordpress-locally-using-docker-5bk2
 ```
 docker-compose up -d
 ```
-- Install
+## Installation
 
 http://lcl.wordpress.com:83/wp-admin/install.php
 
@@ -23,7 +23,7 @@ OR
 
 http://localhost:83/wp-admin/install.php
 
-- Login
+### Login
 
 http://lcl.wordpress.com:83/wp-login.php
 
@@ -31,7 +31,7 @@ OR
 
 http://localhost:83/wp-login.php
 
-- Credentials
+### Wordpress Credentials
 ```
 Username: aristos32
 Password: sLiWsvzAd3JdUcAbd^
@@ -39,7 +39,7 @@ Password: sLiWsvzAd3JdUcAbd^
 
 
 
-Database Connect
+## Database Connect
 
 - PHP my admin
 ```
@@ -60,6 +60,7 @@ $ docker exec -it <container_id_or_name_of_db_service> mysql -u MySQLUsername -p
 
 ```$ docker exec -it wordpress_app /bin/bash```
 
+## Permissions
 - to install plugins correctly via admin panel
 ```
 /var/www/html# chown -R www-data:www-data /var/www/html/wp-content
