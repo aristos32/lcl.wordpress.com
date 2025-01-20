@@ -4,6 +4,8 @@ https://developer.wordpress.org/advanced-administration/before-install/howto-ins
 
 Docker Installation
 https://dev.to/savvasstephnds/run-wordpress-locally-using-docker-5bk2
+
+$ docker exec -it wordpress_app /bin/bash
 ```
 
 ## Add this to /etc/hosts

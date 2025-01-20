@@ -54,3 +54,11 @@ function bookstore_register_genre_taxonomy() {
 
     register_taxonomy( 'genre', 'book', $args );
 }
+
+add_filter( 'postmeta_form_keys', 'bookstore_add_isbn_to_quick_edit', 10, 2 );
+function bookstore_add_isbn_to_quick_edit( $keys, $post ) {
+    if ( $post->post_type === 'book' ) {
+        $keys[] = 'isbn';
+    }
+    return $keys;
+}
