@@ -58,3 +58,6 @@ desktop.ini
 !wp-content/themes/my-custom-theme/
 
 /mysql-data/
+
+# Ignore build directories
+/build/
