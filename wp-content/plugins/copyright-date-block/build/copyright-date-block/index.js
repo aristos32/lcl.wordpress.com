@@ -151,7 +151,7 @@ function save() {
   const currentYear = new Date().getFullYear().toString();
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("p", {
     ..._wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useBlockProps.save(),
-    children: ['Copyright', " \xA9 2019 - ", currentYear]
+    children: ['Copyright', " \xA9 2016 - ", currentYear]
   });
 }
 

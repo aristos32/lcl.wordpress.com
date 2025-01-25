@@ -19,7 +19,7 @@ export default function save() {
     const currentYear = new Date().getFullYear().toString();
     return (
         <p { ...useBlockProps.save() }>
-            { 'Copyright' } © 2019 - { currentYear }
+            { 'Copyright' } © 2016 - { currentYear }
         </p>
     );
 }
