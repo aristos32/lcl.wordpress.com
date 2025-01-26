@@ -4,6 +4,7 @@
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
  */
+import { createElement } from '@wordpress/element';
 import { useBlockProps } from '@wordpress/block-editor';
 
 /**
@@ -18,9 +19,9 @@ import { useBlockProps } from '@wordpress/block-editor';
 export default function save(props) {
 	const startingYear = props.attributes.startingYear;
     const currentYear = new Date().getFullYear().toString();
-    return (
-        <p { ...useBlockProps.save() }>
-            { 'Copyright' } © {startingYear} - { currentYear }
-        </p>
+    return createElement(
+        'p',
+        useBlockProps.save(),
+        `Copyright © ${startingYear} - ${currentYear}`
     );
 }

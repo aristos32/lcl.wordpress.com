@@ -33,7 +33,6 @@ import './editor.scss';
  *
  * @return {React.ReactElement} Element to render.
  */
-import { ReactElement } from 'react';
 
 export default function Edit({attributes, setAttributes}) {
 	const {startingYear} = attributes;
