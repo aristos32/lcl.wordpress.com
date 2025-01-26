@@ -60,7 +60,9 @@ OR
 $ docker exec -it <container_id_or_name_of_db_service> mysql -u MySQLUsername -p
 ```
 
-```$ docker exec -it wordpress_app /bin/bash```
+```
+$ docker exec -it wordpress_app /bin/bash
+```
 
 ## Permissions
 - to install plugins correctly via admin panel
