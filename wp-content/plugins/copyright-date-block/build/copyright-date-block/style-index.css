@@ -8,7 +8,7 @@
  * Replace them with your own styles or remove the file completely.
  */
 .wp-block-copyright-date-copyright-date-block {
-  border: 1px solid #111111;
+  border: 1px solid hsl(0, 80%, 43%);
   padding: 5px;
 }
 
