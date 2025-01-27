@@ -9,11 +9,11 @@
 	"description": "Insert a copyright date into your content.",
 	"example": {},
 	"supports": {
-		"html": false
+		"html": false,
+		"align": true
 	},
 	"textdomain": "copyright-date-block",
 	"editorScript": "file:./index.js",
-	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css",
 	"attributes": {
 		"startingYear": {
