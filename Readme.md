@@ -15,7 +15,7 @@ $ docker exec -it wordpress_app /bin/bash
 
 - Start containers
 ```
-docker-compose up -d
+docker compose stop && docker-compose up
 ```
 ## Installation
 
