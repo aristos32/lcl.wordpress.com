@@ -70,3 +70,8 @@ $ docker exec -it wordpress_app /bin/bash
 /var/www/html# chown -R www-data:www-data /var/www/html/wp-content
 /var/www/html# chmod -R 775 /var/www/html/wp-content
 ```
+
+## development application password
+```
+w3yJ PugY WDzo qRhB biVL XIEV
+```
