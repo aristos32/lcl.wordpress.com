@@ -12,16 +12,16 @@ jQuery( document ).ready(
 				jQuery.post(
 					wp_learn_ajax.ajax_url,
 					{
+						'_ajax_nonce': wp_learn_ajax.nonce,
 						'action': 'delete_form_submission',
 						'id': id,
 					},
 					function (response) {
-						console.log( response );
-						alert( 'Form submission deleted' );
+						console.log(response);
+						alert('Form submission deleted');
 						document.location.reload();
 					}
 				);
-			}
 		);
 	}
 );
