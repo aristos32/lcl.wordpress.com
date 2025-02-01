@@ -29,15 +29,9 @@ if ( fetchBooksByRestButton ){
     } );
 }
 
-const submitBookButton = document.getElementById( 'bookstore-submit-book' );
-if ( submitBookButton ) {
-    submitBookButton.addEventListener( 'click', submitBook );
-}
-
 function submitBook() {
     const title = document.getElementById( 'bookstore-book-title' ).value;
     const content = document.getElementById( 'bookstore-book-content' ).value;
-
     wp.apiFetch( {
         path: '/wp/v2/books/',
         method: 'POST',
@@ -48,4 +42,9 @@ function submitBook() {
     } ).then( ( result ) => {
         alert( 'Book saved!' );
     } );
+}
+
+const submitBookButton = document.getElementById( 'bookstore-submit-book' );
+if ( submitBookButton ) {
+    submitBookButton.addEventListener( 'click', submitBook );
 }
