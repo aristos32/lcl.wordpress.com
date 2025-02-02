@@ -13,9 +13,10 @@ function internationalization_enqueue_scripts()
 		'1.0.0',
 		true
 	);
+
+	wp_set_script_translations('internationalization-theme-js', 'internationalization');
 }
 
-wp_set_script_translations('internationalization-theme-js', 'internationalization');
 
 /**
  * Create a submenu item under the "Appearance" menu.
