@@ -75,3 +75,11 @@ $ docker exec -it wordpress_app /bin/bash
 ```
 w3yJ PugY WDzo qRhB biVL XIEV
 ```
+
+## run PHP_CodeSniffer
+```
+wp-learn-plugin-security git:(master) ✗ pwd
+/home/aristos/development/www/lcl.wordpress.com/wp-content/plugins/wp-learn-plugin-security
+
+✗ vendor/bin/phpcs wp-learn-plugin-security.php --standard=WordPress
+```

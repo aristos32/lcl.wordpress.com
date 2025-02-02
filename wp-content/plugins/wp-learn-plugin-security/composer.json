@@ -1,0 +1,22 @@
+{
+    "name": "aristos/wp-learn-plugin-security",
+    "autoload": {
+        "psr-4": {
+            "Aristos\\WpLearnPluginSecurity\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Aristos Aresti",
+            "email": "aristos.aresti@gmail.com"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "require-dev": {
+        "wp-coding-standards/wpcs": "^3.0"
+    }
+}
