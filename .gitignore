@@ -29,7 +29,7 @@ debug.log
 wp-content/debug.log
 
 # Ignore composer dependencies
-/vendor/
+**/vendor/
 /composer.lock
 
 # Node.js dependencies
