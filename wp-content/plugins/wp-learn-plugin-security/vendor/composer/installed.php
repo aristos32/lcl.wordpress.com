@@ -3,7 +3,7 @@
         'name' => 'aristos/wp-learn-plugin-security',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '5f10d42dcd3917141e9daf9e08662560a59a9e22',
+        'reference' => '3ef6d4872439e7634f0a6f35bb5b9ceb64d05430',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'aristos/wp-learn-plugin-security' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '5f10d42dcd3917141e9daf9e08662560a59a9e22',
+            'reference' => '3ef6d4872439e7634f0a6f35bb5b9ceb64d05430',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
