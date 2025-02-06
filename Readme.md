@@ -39,8 +39,6 @@ Username: aristos32
 Password: sLiWsvzAd3JdUcAbd^
 ```
 
-
-
 ## Database Connect
 
 - PHP my admin
