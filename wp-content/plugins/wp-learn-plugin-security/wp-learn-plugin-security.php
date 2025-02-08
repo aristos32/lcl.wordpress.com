@@ -27,8 +27,8 @@ define('WPLEARN_PLUGIN_PATH', plugin_dir_path(__FILE__));
 /**
  * Set up the required form submissions table
  */
-register_activation_hook(__FILE__, 'wp_learn_setup_table');
-function wp_learn_setup_table()
+register_activation_hook(__FILE__, 'wp_learn_setup_table_plugin_security');
+function wp_learn_setup_table_plugin_security()
 {
 	global $wpdb;
 	$table_name = $wpdb->prefix . 'form_submissions';
