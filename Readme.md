@@ -4,6 +4,12 @@ https://developer.wordpress.org/advanced-administration/before-install/howto-ins
 
 Docker Installation
 https://dev.to/savvasstephnds/run-wordpress-locally-using-docker-5bk2
+```
+## Docker commands
+```
+$ docker exec -it wordpress_app wp core update --allow-root
+
+$ docker exec -it wordpress_app wp plugin update --all --allow-root
 
 $ docker exec -it wordpress_app /bin/bash
 ```
