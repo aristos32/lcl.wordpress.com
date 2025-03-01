@@ -48,11 +48,13 @@ Password: sLiWsvzAd3JdUcAbd^
 ## Database Connect
 
 - PHP my admin
-```
-http://lcl.wordpress.com:8083/
+
+http://lcl.wordpress.com:8083/ 
+
 OR
+
 http://localhost:8083/
-```
+
 OR from host
 
 ```
